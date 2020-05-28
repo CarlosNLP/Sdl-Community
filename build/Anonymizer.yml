@@ -5,15 +5,15 @@ trigger:
   paths:
     include:
      - Anonymizer/*
- 
+
 pool: Studio-OX
- 
+
 variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
   solution : '**/Sdl.Community.projectAnonymizer.sln'
   pluginName: 'Anonymizer\Anonymizer'
   artifactName: 'Sdl.Community.projectAnonymizer.sdlplugin'
-  
+
 steps:
-  - template: build-sdlplugin.yml
+  - template: jobs/build-sdlplugin.yml
