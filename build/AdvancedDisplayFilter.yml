@@ -13,7 +13,4 @@ variables:
   buildConfiguration: 'Release'
   solution : '**/Sdl.Community.AdvancedDisplayFilter.sln'
   pluginName: 'AdvancedDisplayFilter'
-  artifactName: 'AdvancedDisplayFilter.sdlplugin'
-
-steps:
-  - template: jobs/build-sdlplugin.yml
+  artifactName: 'Sdl.Community.AdvancedDisplayFilter.sdlplugin'
