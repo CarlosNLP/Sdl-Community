@@ -1,4 +1,10 @@
-
+trigger:
+ branches:
+  include:
+   - master
+ paths:
+  include:
+    - AdvancedDisplayFilter/*
 
 pool: Studio-OX
 
@@ -8,3 +14,6 @@ variables:
   solution : '**/Sdl.Community.AdvancedDisplayFilter.sln'
   pluginName: 'AdvancedDisplayFilter'
   artifactName: 'Sdl.Community.AdvancedDisplayFilter.sdlplugin'
+
+steps:
+  - template: jobs/build-sdlplugin.yml
