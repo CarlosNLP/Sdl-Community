@@ -1,10 +1,10 @@
-trigger:
- branches:
-  include:
-   - master
- paths:
-  include:
-    - AdvancedDisplayFilter/*
+#trigger:
+# branches:
+#  include:
+#   - master
+# paths:
+#  include:
+#    - AdvancedDisplayFilter/*
 
 pool: Studio-OX
 
