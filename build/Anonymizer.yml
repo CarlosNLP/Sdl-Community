@@ -4,14 +4,22 @@ trigger:
      - master
   paths:
     include:
-     - Anonymizer/*
+     - Sdl.Community.UpLiftAutomationV4/*
 
-pool: Studio-OX
+pr:
+  branches:
+    include:
+     - master
+  paths:
+    include:
+     - Sdl.Community.UpLiftAutomationV4/*
+
+pool: mypool
 
 variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-  solution : '**/Sdl.Community.projectAnonymizer.sln'
+  solution : '**/Sdl.Community.FragmentAlignmentAutomation.sln'
   pluginName: 'Anonymizer\Anonymizer'
   artifactName: 'Sdl.Community.projectAnonymizer.sdlplugin'
 
