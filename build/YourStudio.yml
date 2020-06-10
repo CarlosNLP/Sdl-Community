@@ -20,7 +20,7 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
   solution : '**/Sdl.Community.YourStudio.sln'
-  pathToPublish: 'SDL\SDL Trados Studio\12\Plugins\Packages\Sdl.Community.YourStudio.Integration.sdlplugin'
+  pathToPublish: '$(appdata)\$(pathToPublish)SDL\SDL Trados Studio\12\Plugins\Packages\Sdl.Community.YourStudio.Integration.sdlplugin'
 
 steps:
   - powershell: echo "##vso[task.setvariable variable=appdata]$env:appdata"
